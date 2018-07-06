@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+<head>
+  <style>
+  ul {
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  li {
+      float: left;
+      border-right:1px solid #bbb;
+  }
+
+  li:last-child {
+      border-right: none;
+  }
+
+  li a {
+
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+      background-color: #111;
+  }
+
+  .active {
+      background-color: #4CAF50;
+  }
+  </style>
+  </head>
+
+
+<body>
+  <div id="Header">
+  <div class="container">
+
+  <ul>
+    <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="contact.html"><strong>News</strong></a></li>
+    <li><a href="contact.html"><strong>Videos</stong></a></li>
+    <li><a href="contact.html"><strong>Contact</stong></a></li>
+    <li style="float:right"><a href="about.html"><strong>About</strong></a></li>
+
+</ul>
+  <div id="Content">
+  <div class="container">
+  <div class="post">
+    <div class="post-author">
+      <img src="blogp.jpg" height="50dp"><br>
+  </div>
+
+  <div id="Footer">
+  <div class="container"></div>
+  <div class="column" ><h4>My Links</h4>
+    <p>
+      <a href="https://twitter.com/mrchibunna"></a>
+        <br>
+        <a href="https://facebook.com/chukwudebelujohn"></a>
+  </div>
+  <div class="column">
+
+    <form>
+    	<fieldset>
+    		<legend>Enquiries</legend>
+    		<p>
+    			<label>First Name</label>
+    			<input type ="text"
+    			id = "mytext"
+    		</p>
+
+    		<p>
+    			<label>Last Name</label>
+    			<input type ="text">
+
+    		</p>
+
+
+    		<p><label>Phone Number</label>
+    			<input type ="text"
+    			id = "mytext"</p>
+
+    			<p>
+    			<label>Email Address</label>
+    			<input type ="text"
+    			id = "mytext"
+    		</p>
+    				<p>
+    				<label>Location</label>
+    				<select id ="mylist">
+    					<option value ="1">Lagos</option>
+    					<option value ="2">Accra</option>
+    					<option value ="3">Nairobi</option>
+    					<option value ="4">Kampala</option>
+    					<option value ="5">Cape Town</option>
+    					</select>
+    			</p>
+
+    			 <p>
+    			<form action = "mailto:jchukwudebelu@gmail.com" method="GET">
+    				<br>
+
+    				<textarea name="body" value="additional comments"></textarea>
+    				<input type="submit" value="Send" />
+    			</form>
+
+  </div>
+
+</body>
+
+</html>
