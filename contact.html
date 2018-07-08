@@ -14,7 +14,11 @@
       overflow: hidden;
       background-color: #333;
   }
+  h3{
+    text-decoration-color:#21ff21;
+    text-decoration:underline;
 
+  }
   li {
       float: left;
       border-right:1px solid #bbb;
@@ -22,6 +26,9 @@
 
   li:last-child {
       border-right: none;
+  }
+  li.copyrights{
+    list-style-type: none;
   }
 
   li a {
@@ -46,16 +53,18 @@
 
 <body>
   <div id="Header">
-  <div class="container">
+  <div class="hometab">
 
   <ul>
     <li><a href="index.html"><strong>Home</strong></a></li>
     <li><a href="contact.html"><strong>News</strong></a></li>
     <li><a href="contact.html"><strong>Videos</stong></a></li>
     <li><a href="contact.html"><strong>Contact</stong></a></li>
+    <li><a href="#" class="button special">Sign Up</a></li>
     <li style="float:right"><a href="about.html"><strong>About</strong></a></li>
 
 </ul>
+
   <div id="Content">
   <div class="container">
   <div class="post">
@@ -63,14 +72,7 @@
       <img src="blogp.jpg" height="50dp"><br>
   </div>
 
-  <div id="Footer">
-  <div class="container"></div>
-  <div class="column" ><h4>My Links</h4>
-    <p>
-      <a href="https://twitter.com/mrchibunna"></a>
-        <br>
-        <a href="https://facebook.com/chukwudebelujohn"></a>
-  </div>
+
   <div class="column">
 
     <form>
@@ -79,7 +81,7 @@
     		<p>
     			<label>First Name</label>
     			<input type ="text"
-    			id = "mytext"
+    			id = "mytext" required
     		</p>
 
     		<p>
@@ -110,12 +112,28 @@
     			</p>
 
     			 <p>
-    			<form action = "mailto:jchukwudebelu@gmail.com" method="GET">
+    			<form action = "mailto:jchukwudebelu@gmail.com" method=" get">
     				<br>
 
-    				<textarea name="body" value="additional comments"></textarea>
+    				<textarea rows="7" cols="50"name="body" value="additional comments"></textarea>
     				<input type="submit" value="Send" />
     			</form>
+  </div>
+<hr>
+  <div id="Footer">
+  <div class="container"></div>
+  <div class="column" ><p><h3><strong>FOLLOW US ON SOCIAL MEDIA</h3></p>
+    <p>
+    <a href="https://twitter.com/mrchibunna"><img title="Twitter" alt="Twitter"  src="twicon.png" width="35" height="35"/></a>
+    <a href="https://instagram.com/mrchibunna"><img title="instagram" alt="instagram"  src="isicon.png" width="35" height="35"/></a>
+
+        <a href="https://facebook.com/chukwudebelujohn"><img title="Facebook" alt="Facebook"
+          src ="fbicon.png" width = "35" height= "35"></a>
+
+          <ul class="copyright">
+          <li id="copyrights ">&copy; Untitled. All rights reserved.</li><li id="design">Design: <a href="http://html5up.net">HTML5 UP</a>
+          </li>
+          </ul>
 
   </div>
 
